@@ -235,6 +235,6 @@ export const SkillTitle = styled.h1`
   @media screen and (max-width: 576px) {
     width: 100%;
     height: 650px;
-    bottom: 10vh;
+    bottom: 0;
   }
 `;

@@ -12,18 +12,23 @@ export const ProjectWrapper = styled.div`
   height: calc(100% - 60px);
   display: flex;
 
-  background-color: rgba(var(--border), 0.3);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  border: 2px solid rgb(var(--border));
-  border-radius: 10px;
-
   .items {
     width: 40%;
-    border-right: 2px solid rgb(var(--border));
   }
 
   .preview {
     width: 60%;
+  }
+
+  @media screen and (max-width: 992px) {
+    .items {
+      width: 100%;
+    }
+    .preview {
+      display: none;
+    }
+  }
+
+  @media screen and (max-width: 576px) {
   }
 `;

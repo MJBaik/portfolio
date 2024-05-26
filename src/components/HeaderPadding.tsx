@@ -45,24 +45,7 @@ function HeaderPadding() {
           <span key={i}>{e}</span>
         ))}
       </div>
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 1440 320"
-        className="bgLine"
-      >
-        <path
-          stroke="rgb(175, 204, 208)"
-          strokeWidth={"5px"}
-          fill="none"
-          d="M0,32L48,58.7C96,85,192,139,288,149.3C384,160,480,128,576,112C672,96,768,96,864,122.7C960,149,1056,203,1152,229.3C1248,256,1344,256,1392,256L1440,256L1440,0z"
-        ></path>
-        <path
-          stroke="rgb(86, 129, 137)"
-          strokeWidth={"5px"}
-          fill="none"
-          d="M0,224L48,213.3C96,203,192,181,288,197.3C384,213,480,267,576,282.7C672,299,768,277,864,224C960,171,1056,85,1152,48C1248,11,1344,21,1392,26.7L1440,32L1440,0z"
-        ></path>
-      </svg>
+      <div className="bgLine" />
     </HeaderPaddingSection>
   );
 }

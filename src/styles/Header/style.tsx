@@ -14,13 +14,13 @@ export const HeaderAtag = styled.div`
   position: absolute;
   z-index: 2;
   left: 50px;
-  bottom: 40%;
+  bottom: 45%;
   display: flex;
   flex-direction: column;
 
   & > a {
     color: rgb(var(--bg), 0.8);
-    font-size: 72pt;
+    font-size: 60pt;
     font-weight: 900;
     text-decoration: none;
 
@@ -30,7 +30,7 @@ export const HeaderAtag = styled.div`
   }
 
   @media screen and (max-width: 992px) {
-    bottom: 35%;
+    bottom: 40%;
     left: 40px;
 
     & > a {
@@ -39,7 +39,7 @@ export const HeaderAtag = styled.div`
   }
 
   @media screen and (max-width: 576px) {
-    bottom: 30%;
+    bottom: 35%;
     left: 30px;
 
     & > a {
@@ -109,10 +109,10 @@ export const HeaderTitle = styled.div`
       line-height: 1;
       margin: 0;
       width: fit-content;
-      font-size: 32pt;
+      font-size: 24pt;
       background-color: rgb(var(--bg));
       border-top-right-radius: 50px;
-      padding: 30px;
+      padding: 20px 30px;
       line-height: 0.9;
 
       &:before {
@@ -130,7 +130,7 @@ export const HeaderTitle = styled.div`
       }
 
       &:nth-child(2) {
-        font-size: 72pt;
+        font-size: 60pt;
       }
     }
   }

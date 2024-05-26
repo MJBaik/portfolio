@@ -6,12 +6,13 @@ function Projects() {
     <ProjectSection id="projects">
       <ProjectWrapper>
         <div className="items">
+          <h1>Projects</h1>
           <ProjectsItem></ProjectsItem>
           <ProjectsItem></ProjectsItem>
           <ProjectsItem></ProjectsItem>
           <ProjectsItem></ProjectsItem>
         </div>
-        <div className="preview"></div>
+        <div className="preview">Projects</div>
       </ProjectWrapper>
     </ProjectSection>
   );

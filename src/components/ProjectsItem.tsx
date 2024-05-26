@@ -1,9 +1,7 @@
-import React from "react";
+import { ItemWrapper } from "../styles/Projects/item";
 
-type Props = {};
-
-function ProjectsItem({}: Props) {
-  return <div>ProjectsItems</div>;
+function ProjectsItem() {
+  return <ItemWrapper>ProjectsItems</ItemWrapper>;
 }
 
 export default ProjectsItem;

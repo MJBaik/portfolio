@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import BGLine from "../../assets/images/bgline.png";
 
 export const HeaderPaddingSection = styled.section`
   width: 100%;
@@ -14,7 +15,7 @@ export const HeaderPaddingSection = styled.section`
     z-index: 1;
 
     & > span {
-      font-size: 32pt;
+      font-size: 28pt;
       color: rgba(var(--text-sub), 0.3);
       font-weight: 900;
 
@@ -22,30 +23,38 @@ export const HeaderPaddingSection = styled.section`
         color: rgba(var(--text-sub), 0.5);
       }
     }
+  }
 
-    @media screen and (max-width: 992px) {
+  @media screen and (max-width: 992px) {
+    height: 100vh;
+    align-items: center;
+
+    .inner {
       width: 80%;
 
       & > span {
-        font-size: 30pt;
+        font-size: 24pt;
       }
     }
+  }
 
-    @media screen and (max-width: 576px) {
+  @media screen and (max-width: 576px) {
+    .inner {
       width: 90%;
 
       & > span {
-        font-size: 28pt;
+        font-size: 21pt;
       }
     }
   }
 
   .bgLine {
     position: absolute;
-    top: 50vh;
-
-    path {
-      fill-rule: evenodd;
-    }
+    background-image: url(${BGLine});
+    background-size: cover;
+    background-repeat: no-repeat;
+    top: 40vh;
+    width: 100%;
+    height: 100%;
   }
 `;
