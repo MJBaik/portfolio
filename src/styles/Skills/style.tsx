@@ -6,7 +6,7 @@ export const SkillSection = styled(Section)`
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 130vh;
+  height: 150vh;
   position: relative;
 
   @media screen and (max-width: 576px) {

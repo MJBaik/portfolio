@@ -18,9 +18,13 @@ export const ItemWrapper = styled.div`
   justify-content: flex-end;
   font-size: 24pt;
   font-weight: 300;
-  color: rgb(var(--sub));
   transition: all 0.5s ease;
   cursor: pointer;
+
+  & > p {
+    color: rgb(var(--bg-modal), 1);
+    margin-bottom: 25px;
+  }
 
   .arrow {
     font-size: 36pt;
@@ -30,6 +34,7 @@ export const ItemWrapper = styled.div`
 
   &:hover {
     background-color: rgba(var(--border), 0.2);
+    transform: scale(1.05);
   }
 
   @media screen and (max-width: 992px) {

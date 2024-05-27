@@ -183,7 +183,7 @@ export const AboutButton = styled.div`
   font-style: italic;
 
   &:hover {
-    color: rgb(var(--main));
+    color: rgb(var(--red));
   }
 
   &::before,

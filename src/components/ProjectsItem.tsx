@@ -7,7 +7,8 @@ function ProjectsItem({ pjt }: { pjt: IProject }) {
 
   return (
     <ItemWrapper>
-      {title} <HiArrowUpRight className="arrow" />
+      <p>{title}</p>
+      <HiArrowUpRight className="arrow" />
     </ItemWrapper>
   );
 }
