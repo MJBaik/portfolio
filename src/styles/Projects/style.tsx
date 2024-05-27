@@ -8,27 +8,43 @@ export const ProjectSection = styled(Section)`
 `;
 
 export const ProjectWrapper = styled.div`
-  width: calc(100% - 60px);
-  height: calc(100% - 60px);
+  width: 70%;
+  height: 100%;
   display: flex;
+  position: relative;
+
+  .title {
+    font-weight: 100;
+    font-size: 24pt;
+  }
 
   .items {
+    position: absolute;
     width: 40%;
+    left: 0;
+    top: 0;
+    z-index: 1;
   }
 
   .preview {
-    width: 60%;
+    position: absolute;
+    width: 70%;
+    height: calc(100% - 30px);
+    background-color: rgb(var(--bg-modal));
+    right: 0;
+    top: 30px;
+    z-index: 0;
   }
 
   @media screen and (max-width: 992px) {
+    width: calc(100% - 30px);
+
     .items {
+      position: relative;
       width: 100%;
     }
     .preview {
       display: none;
     }
-  }
-
-  @media screen and (max-width: 576px) {
   }
 `;

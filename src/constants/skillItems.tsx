@@ -1,4 +1,16 @@
-export const skillItems = {
+import React from "react";
+
+interface ISkill {
+  [skill: string]: {
+    [name: string]: {
+      level: string;
+      tag: React.ReactElement;
+      color: string;
+    };
+  };
+}
+
+export const skillItems: ISkill = {
   frontend: {
     javascript: {
       level: "3/5",

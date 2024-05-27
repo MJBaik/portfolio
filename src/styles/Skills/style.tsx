@@ -41,7 +41,7 @@ export const SkillItem = styled.div<{ $color: string }>`
   width: 100px;
   height: 100px;
   border-radius: 10px;
-  border: 2px solid rgb(var(--border));
+  border: 2px solid rgba(var(--border), 0.5);
   position: relative;
 
   background-color: rgba(var(--border), 0.3);

@@ -1,3 +1,4 @@
+import { projectItems } from "../constants/projects";
 import { ProjectSection, ProjectWrapper } from "../styles/Projects/style";
 import ProjectsItem from "./ProjectsItem";
 
@@ -6,11 +7,10 @@ function Projects() {
     <ProjectSection id="projects">
       <ProjectWrapper>
         <div className="items">
-          <h1>Projects</h1>
-          <ProjectsItem></ProjectsItem>
-          <ProjectsItem></ProjectsItem>
-          <ProjectsItem></ProjectsItem>
-          <ProjectsItem></ProjectsItem>
+          <h1 className="title">Projects</h1>
+          {projectItems.map((e, i) => (
+            <ProjectsItem key={i} pjt={e} />
+          ))}
         </div>
         <div className="preview">Projects</div>
       </ProjectWrapper>

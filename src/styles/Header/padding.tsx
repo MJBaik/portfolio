@@ -20,7 +20,7 @@ export const HeaderPaddingSection = styled.section`
       font-weight: 900;
 
       &.color {
-        color: rgba(var(--text-sub), 0.5);
+        color: rgba(var(--sub), 0.8);
       }
     }
   }

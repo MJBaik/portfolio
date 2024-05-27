@@ -14,7 +14,7 @@ export const HeaderAtag = styled.div`
   position: absolute;
   z-index: 2;
   left: 50px;
-  bottom: 45%;
+  bottom: 40%;
   display: flex;
   flex-direction: column;
 
@@ -25,7 +25,7 @@ export const HeaderAtag = styled.div`
     text-decoration: none;
 
     &:hover {
-      color: rgb(var(--bg));
+      color: rgb(var(--red), 0.9);
     }
   }
 

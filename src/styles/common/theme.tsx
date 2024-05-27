@@ -9,5 +9,6 @@ export const light = {
     main: "7, 95, 115",
     sub: "86, 129, 137",
     border: "175, 204, 208",
+    red: "204, 68, 0",
   },
 };

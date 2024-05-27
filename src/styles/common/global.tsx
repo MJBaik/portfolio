@@ -9,7 +9,8 @@ export const Global = createGlobalStyle`
       --text-sub: ${props.theme.env.textSub};
       --main: ${props.theme.color.main};
       --sub: ${props.theme.color.sub};
-      --border: ${props.theme.color.border}
+      --border: ${props.theme.color.border};
+      --red: ${props.theme.color.red};
     `};
 
   }
