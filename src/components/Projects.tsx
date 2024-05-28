@@ -4,11 +4,11 @@ import ProjectsItem from "./ProjectsItem";
 
 function Projects() {
   return (
-    <ProjectSection id="projects">
-      <ProjectWrapper>
+    <ProjectSection>
+      <ProjectWrapper id="projects">
         <div className="items">
           <h1 className="title">Projects</h1>
-          {projectItems.map((e, i) => (
+          {Object.entries(projectItems).map((e, i) => (
             <ProjectsItem key={i} pjt={e} />
           ))}
         </div>

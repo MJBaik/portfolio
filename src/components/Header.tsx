@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import {
   AboutButton,
   HeaderAtag,
@@ -6,8 +6,17 @@ import {
   HeaderSection,
   HeaderTitle,
 } from "../styles/Header/style";
+import Video from "../assets/images/bgMovie.mp4";
 
 function Header() {
+  const videoRef = useRef<HTMLVideoElement>(null);
+
+  useEffect(() => {
+    if (videoRef.current) {
+      videoRef.current.playbackRate = 0.7;
+    }
+  }, []);
+
   return (
     <HeaderSection id="header">
       <AboutButton>About</AboutButton>
@@ -22,7 +31,9 @@ function Header() {
         <a href="#projects">Projects</a>
         <a href="#contact">Contact</a>
       </HeaderAtag>
-      <HeaderInner />
+      <HeaderInner>
+        <video ref={videoRef} src={Video} muted autoPlay loop />
+      </HeaderInner>
     </HeaderSection>
   );
 }

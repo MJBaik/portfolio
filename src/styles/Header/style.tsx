@@ -19,7 +19,7 @@ export const HeaderAtag = styled.div`
   flex-direction: column;
 
   & > a {
-    color: rgb(var(--bg), 0.8);
+    color: rgb(var(--bg), 0.9);
     font-size: 60pt;
     font-weight: 900;
     text-decoration: none;
@@ -51,11 +51,16 @@ export const HeaderAtag = styled.div`
 export const HeaderInner = styled.div`
   width: 100%;
   height: 90%;
-  background-image: url(${BGImg});
-  background-size: cover;
   border-radius: 10px;
   z-index: 0;
   position: relative;
+  overflow: hidden;
+
+  video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
 
   &:before {
     content: " ";
