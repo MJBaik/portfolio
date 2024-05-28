@@ -1,6 +1,5 @@
 import styled from "styled-components";
 import { Section } from "../common/components";
-import BGImg from "../../assets/images/bg.jpg";
 
 export const HeaderSection = styled(Section)`
   display: flex;

@@ -1,4 +1,3 @@
-import React from "react";
 import { IProject } from "../constants/projects";
 import { ModalDescWrapper } from "../styles/Modal/description";
 
