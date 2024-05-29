@@ -4,6 +4,7 @@ export const ModalDescWrapper = styled.div`
   width: 45vw;
   height: 100%;
   overflow-y: auto;
+  padding-right: 20px;
 
   &::-webkit-scrollbar {
     background-color: transparent;
@@ -15,12 +16,30 @@ export const ModalDescWrapper = styled.div`
   }
 
   &::-webkit-scrollbar-thumb {
-    background-color: rgb(var(--main));
+    background-color: rgba(var(--bg-modal), 0.5);
     border-radius: 25px;
   }
 
-  & > h1 {
-    font-size: 24pt;
+  .titleBar {
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: center;
+
+    & > h1 {
+      font-size: 24pt;
+    }
+
+    .icons {
+      height: 30px;
+      width: 300px;
+      margin-left: 10px;
+
+      img {
+        width: 30px;
+        margin: 0 5px;
+      }
+    }
   }
 
   .set {

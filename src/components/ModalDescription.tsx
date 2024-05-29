@@ -8,7 +8,16 @@ type Props = {
 function ModalDescription({ project }: Props) {
   return (
     <ModalDescWrapper>
-      <h1>{project.title}</h1>
+      <div className="titleBar">
+        <h1>{project.title}</h1>
+        <div className="icons">
+          {project.link.map((e, i) => (
+            <a href={e[1]} key={i} target="_blank" rel="noopener noreferrer">
+              <img src={e[2]} alt={e[0]} />
+            </a>
+          ))}
+        </div>
+      </div>
       <div className="set">
         <div className="subtitle">개요(인원)</div>
         <p>{project.desc}</p>
