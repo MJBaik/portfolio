@@ -1,14 +1,14 @@
 import styled from "styled-components";
 
 export const ModalDescWrapper = styled.div`
-  width: 45vw;
+  width: 50%;
   height: 100%;
   overflow-y: auto;
   padding-right: 20px;
 
   &::-webkit-scrollbar {
     background-color: transparent;
-    width: 5px;
+    width: 0px;
   }
 
   &::-webkit-scrollbar-track {
@@ -16,30 +16,7 @@ export const ModalDescWrapper = styled.div`
   }
 
   &::-webkit-scrollbar-thumb {
-    background-color: rgba(var(--bg-modal), 0.5);
-    border-radius: 25px;
-  }
-
-  .titleBar {
-    display: flex;
-    width: 100%;
-    justify-content: flex-start;
-    align-items: center;
-
-    & > h1 {
-      font-size: 24pt;
-    }
-
-    .icons {
-      height: 30px;
-      width: 300px;
-      margin-left: 10px;
-
-      img {
-        width: 30px;
-        margin: 0 5px;
-      }
-    }
+    background-color: transparent;
   }
 
   .set {
@@ -71,6 +48,7 @@ export const ModalDescWrapper = styled.div`
 
   @media screen and (max-width: 992px) {
     width: 100%;
-    overflow-y: auto;
+    height: max-content;
+    overflow-y: visible;
   }
 `;

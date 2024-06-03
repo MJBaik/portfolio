@@ -1,22 +1,21 @@
 import styled from "styled-components";
 
 export const ImageWrapper = styled.div<{ $num: number }>`
-  width: 35vw;
-  height: 90%;
-  position: absolute;
-  right: 5vw;
-  bottom: 10%;
+  width: 45%;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 
   .mainImage {
     width: 100%;
-    height: 80%;
+    height: 50%;
+    flex-grow: 1;
     display: flex;
     justify-content: center;
     align-items: center;
     object-fit: contain;
+    margin: 20px 0;
   }
 
   .thumbnail {
@@ -27,14 +26,14 @@ export const ImageWrapper = styled.div<{ $num: number }>`
 
     & > img {
       cursor: pointer;
-      padding: 5px;
-      background-color: rgba(var(--bg-modal), 0.2);
+      background-color: rgba(var(--bg-modal), 0.1);
       width: 50px;
       height: 50px;
+      padding: 3px;
     }
   }
 
   @media screen and (max-width: 992px) {
-    display: none;
+    width: 100%;
   }
 `;

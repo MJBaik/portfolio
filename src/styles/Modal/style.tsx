@@ -31,19 +31,16 @@ export const ModalContainer = styled(Section)`
     padding: 30px 70px;
     animation: open 0.2s ease;
     position: relative;
-  }
-
-  .contents {
-    width: 100%;
-    height: 100%;
-    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
   }
 
   .close {
     font-size: 21pt;
     position: absolute;
-    right: 0px;
-    top: -10px;
+    right: 30px;
+    top: 30px;
     cursor: pointer;
 
     &:hover {
@@ -55,6 +52,7 @@ export const ModalContainer = styled(Section)`
     .inner {
       overflow-y: auto;
       padding: 70px 40px 0 40px;
+      flex-direction: column;
     }
 
     .contents {

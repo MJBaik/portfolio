@@ -1,5 +1,5 @@
 import { useEffect, useMemo, useRef } from "react";
-import { HeaderPaddingSection } from "../styles/Header/padding";
+import { HeaderPaddingSection } from "../../styles/Header/padding";
 
 function HeaderPadding() {
   const scrollRef = useRef<HTMLDivElement>(null);

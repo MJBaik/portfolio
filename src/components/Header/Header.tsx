@@ -5,8 +5,8 @@ import {
   HeaderInner,
   HeaderSection,
   HeaderTitle,
-} from "../styles/Header/style";
-import Video from "../assets/images/bgMovie.mp4";
+} from "../../styles/Header/style";
+import Video from "../../assets/images/bgMovie.mp4";
 
 function Header() {
   const videoRef = useRef<HTMLVideoElement>(null);

@@ -1,8 +1,8 @@
 import React from "react";
-import { IProject } from "../constants/projects";
-import { ItemWrapper } from "../styles/Projects/item";
+import { IProject } from "../../constants/projects";
+import { ItemWrapper } from "../../styles/Projects/item";
 import { HiArrowUpRight } from "react-icons/hi2";
-import { useModalActions } from "../stores/modalStore";
+import { useModalActions } from "../../stores/modalStore";
 
 function ProjectsItem({ pjt }: { pjt: [string, IProject] }) {
   const [name, project] = pjt;

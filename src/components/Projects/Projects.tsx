@@ -1,5 +1,5 @@
-import { projectItems } from "../constants/projects";
-import { ProjectSection, ProjectWrapper } from "../styles/Projects/style";
+import { projectItems } from "../../constants/projects";
+import { ProjectSection, ProjectWrapper } from "../../styles/Projects/style";
 import ProjectsItem from "./ProjectsItem";
 
 function Projects() {

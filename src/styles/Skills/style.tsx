@@ -83,7 +83,7 @@ export const SkillItem = styled.div<{ $color: string }>`
     bottom: 0;
     right: 0;
     background-color: rgba(var(--main), 0.3);
-    border-radius: 0 0 10px 10px;
+    border-radius: 0 0 8px 8px;
     margin-top: 100%;
     transition: all 0.5s ease;
   }
@@ -106,7 +106,7 @@ export const SkillItem = styled.div<{ $color: string }>`
       transform: translateX(-80px) translateY(3px);
     }
     50% {
-      transform: translateX(-160px) translateY(-3px);
+      transform: translateX(-160px) translateY(0px);
     }
     70% {
       transform: translateX(-240px) translateY(3px);
@@ -129,14 +129,14 @@ export const SkillItem = styled.div<{ $color: string }>`
 
     &:before {
       margin-top: 0;
-      border-radius: 10px;
+      border-radius: 8px;
       z-index: 0;
     }
 
     &.blank {
       overflow: hidden;
       &:before {
-        border-radius: 0 0 10px 10px;
+        border-radius: 0 0 8px 8px;
         margin-top: 60px;
         border-top: 4px solid rgba(var(--main), 0.4);
       }

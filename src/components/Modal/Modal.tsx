@@ -3,10 +3,10 @@ import {
   useIsModalOpen,
   useModalActions,
   useModalContent,
-} from "../stores/modalStore";
-import { ModalContainer } from "../styles/Modal/style";
+} from "../../stores/modalStore";
+import { ModalContainer } from "../../styles/Modal/style";
 import { TfiClose } from "react-icons/tfi";
-import { projectItems } from "../constants/projects";
+import { projectItems } from "../../constants/projects";
 import ModalDescription from "./ModalDescription";
 import ModalImage from "./ModalImage";
 
@@ -23,10 +23,6 @@ function Modal() {
     }
   }, [modalContent]);
 
-  const preventScroll = (e: MouseEvent) => {
-    e.preventDefault();
-  };
-
   const autoClose = (e: MouseEvent) => {
     const modal = modalRef.current;
     const target = e.target as HTMLElement;
@@ -39,12 +35,8 @@ function Modal() {
 
   useEffect(() => {
     if (isModalOpen) {
-      window.addEventListener("wheel", preventScroll, { passive: false });
       window.addEventListener("mousedown", autoClose);
-      return () => {
-        window.removeEventListener("wheel", preventScroll);
-        window.removeEventListener("mousedown", autoClose);
-      };
+      return () => window.removeEventListener("mousedown", autoClose);
     }
   }, [isModalOpen]);
 
@@ -52,11 +44,9 @@ function Modal() {
   return (
     <ModalContainer>
       <div className="inner" ref={modalRef}>
-        <ModalImage images={project.images} />
-        <div className="contents">
-          <TfiClose className="close" onClick={() => setIsModalOpen(false)} />
-          <ModalDescription project={project} />
-        </div>
+        <TfiClose className="close" onClick={() => setIsModalOpen(false)} />
+        <ModalDescription project={project} />
+        <ModalImage thumbs={project.thumbnails} images={project.images} />
       </div>
     </ModalContainer>
   );

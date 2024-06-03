@@ -4,6 +4,12 @@ import {
   logintoyouImages,
   talkydokiImages,
 } from "./projectImages";
+import {
+  cloudyThumbs,
+  collectThumbs,
+  logintoyouThumbs,
+  talkydokiThumbs,
+} from "./projectThumbnails";
 import Notion from "../assets/images/notion.png";
 import Git from "../assets/images/git.png";
 
@@ -15,6 +21,7 @@ export interface IProject {
   mywork: string;
   skills: string[];
   detail: React.ReactElement;
+  thumbnails: string[];
   images: string[];
   etc: string;
   link: string[][];
@@ -61,6 +68,7 @@ export const projectItems: { [name: string]: IProject } = {
         진행하는 동안 많은 것을 배울 수 있었습니다.
       </p>
     ),
+    thumbnails: cloudyThumbs,
     images: cloudyImages,
     etc: "SSAFY 자율 프로젝트 기업연계 최우수상 수상",
     link: [
@@ -118,6 +126,7 @@ export const projectItems: { [name: string]: IProject } = {
       </p>
     ),
     images: talkydokiImages,
+    thumbnails: talkydokiThumbs,
     etc: "SSAFY 특화 프로젝트 우수상 수상",
     link: [
       [
@@ -174,6 +183,7 @@ export const projectItems: { [name: string]: IProject } = {
       </p>
     ),
     images: logintoyouImages,
+    thumbnails: logintoyouThumbs,
     etc: "",
     link: [
       [
@@ -221,6 +231,7 @@ export const projectItems: { [name: string]: IProject } = {
       </p>
     ),
     images: collectImages,
+    thumbnails: collectThumbs,
     etc: "",
     link: [
       [
