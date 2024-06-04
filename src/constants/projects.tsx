@@ -70,7 +70,7 @@ export const projectItems: { [name: string]: IProject } = {
     ),
     thumbnails: cloudyThumbs,
     images: cloudyImages,
-    etc: "SSAFY 자율 프로젝트 기업연계 최우수상 수상",
+    etc: "SSAFY 기업연계 프로젝트 최우수상 수상",
     link: [
       [
         "notion",
@@ -127,7 +127,7 @@ export const projectItems: { [name: string]: IProject } = {
     ),
     images: talkydokiImages,
     thumbnails: talkydokiThumbs,
-    etc: "SSAFY 특화 프로젝트 우수상 수상",
+    etc: "SSAFY 빅데이터 도메인 프로젝트 우수상 수상",
     link: [
       [
         "notion",
@@ -232,7 +232,7 @@ export const projectItems: { [name: string]: IProject } = {
     ),
     images: collectImages,
     thumbnails: collectThumbs,
-    etc: "",
+    etc: "SSAFY 학기말 프로젝트 최우수상 수상",
     link: [
       [
         "git",

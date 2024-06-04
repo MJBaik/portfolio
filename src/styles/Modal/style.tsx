@@ -59,10 +59,5 @@ export const ModalContainer = styled(Section)`
       display: flex;
       flex-direction: column;
     }
-
-    .close {
-      right: -10px;
-      top: -30px;
-    }
   }
 `;

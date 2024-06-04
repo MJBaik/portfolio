@@ -19,7 +19,7 @@ function Header() {
 
   return (
     <HeaderSection id="header">
-      <AboutButton>About</AboutButton>
+      <AboutButton></AboutButton>
       <HeaderTitle>
         <div className="titleInner">
           <h1>Frontend Developer</h1>

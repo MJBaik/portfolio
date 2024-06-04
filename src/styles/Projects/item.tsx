@@ -22,7 +22,7 @@ export const ItemWrapper = styled.div`
   cursor: pointer;
 
   & > p {
-    color: rgb(var(--bg-modal), 1);
+    color: rgb(var(--main), 1);
     margin-bottom: 25px;
   }
 
@@ -34,14 +34,16 @@ export const ItemWrapper = styled.div`
 
   &:hover {
     background-color: rgba(var(--border), 0.2);
-    transform: scale(1.05);
+    transform: scale(1.01);
   }
 
   @media screen and (max-width: 992px) {
     height: 80px;
+    font-size: 24pt;
   }
 
   @media screen and (max-width: 576px) {
     height: 50px;
+    font-size: 21pt;
   }
 `;
