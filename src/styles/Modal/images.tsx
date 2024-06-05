@@ -7,15 +7,30 @@ export const ImageWrapper = styled.div<{ $num: number }>`
   flex-direction: column;
   justify-content: space-between;
 
-  .mainImage {
+  .imageBox {
     width: 100%;
     height: 50%;
     flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .notice {
+      color: rgb(var(--text-sub));
+    }
+  }
+
+  .mainImage {
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     object-fit: contain;
     margin: 20px 0;
+  }
+
+  .notice {
+    margin: 0;
   }
 
   .thumbnail {

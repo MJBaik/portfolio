@@ -21,13 +21,16 @@ function ModalImage({ images, thumbs }: Props) {
 
   return (
     <ImageWrapper $num={images.length}>
-      <img
-        className="mainImage"
-        src={thumbs[now]}
-        alt="mainImage"
-        onMouseEnter={playGIF}
-        onMouseLeave={stopGIF}
-      />
+      <div className="imageBox">
+        <p className="notice">※마우스를 올리면 gif가 재생됩니다.</p>
+        <img
+          className="mainImage"
+          src={thumbs[now]}
+          alt="mainImage"
+          onMouseEnter={playGIF}
+          onMouseLeave={stopGIF}
+        />
+      </div>
       <div className="thumbnail">
         {thumbs.map((e, i) => (
           <img

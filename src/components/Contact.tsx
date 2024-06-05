@@ -4,7 +4,7 @@ import { SiTistory } from "react-icons/si";
 
 function Contact() {
   return (
-    <ContactSetion>
+    <ContactSetion id="contact">
       <div className="inner">
         <div>
           <p>백민정 | Minjung Baik</p>
