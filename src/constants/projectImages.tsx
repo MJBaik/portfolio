@@ -13,7 +13,6 @@ import Talkydoki3 from "../assets/projects/talkydoki/talky3.gif";
 import Talkydoki4 from "../assets/projects/talkydoki/talky4.gif";
 import Talkydoki5 from "../assets/projects/talkydoki/talky4-1.gif";
 import Talkydoki6 from "../assets/projects/talkydoki/talky5.gif";
-import Talkydoki7 from "../assets/projects/talkydoki/talky6.gif";
 import Talkydoki8 from "../assets/projects/talkydoki/talky7.gif";
 import Talkydoki9 from "../assets/projects/talkydoki/talky8.gif";
 
@@ -47,7 +46,6 @@ export const talkydokiImages: string[] = [
   Talkydoki4,
   Talkydoki5,
   Talkydoki6,
-  Talkydoki7,
   Talkydoki8,
   Talkydoki9,
 ];

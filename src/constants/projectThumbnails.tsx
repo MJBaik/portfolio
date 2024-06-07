@@ -13,7 +13,6 @@ import TalkydokiThumb3 from "../assets/projects/talkydoki/thumbnail/talky3.png";
 import TalkydokiThumb4 from "../assets/projects/talkydoki/thumbnail/talky4.png";
 import TalkydokiThumb5 from "../assets/projects/talkydoki/thumbnail/talky4-1.png";
 import TalkydokiThumb6 from "../assets/projects/talkydoki/thumbnail/talky5.png";
-import TalkydokiThumb7 from "../assets/projects/talkydoki/thumbnail/talky6.png";
 import TalkydokiThumb8 from "../assets/projects/talkydoki/thumbnail/talky7.png";
 import TalkydokiThumb9 from "../assets/projects/talkydoki/thumbnail/talky8.png";
 
@@ -47,7 +46,6 @@ export const talkydokiThumbs: string[] = [
   TalkydokiThumb4,
   TalkydokiThumb5,
   TalkydokiThumb6,
-  TalkydokiThumb7,
   TalkydokiThumb8,
   TalkydokiThumb9,
 ];
