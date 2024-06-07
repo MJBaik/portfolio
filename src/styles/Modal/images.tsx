@@ -22,6 +22,7 @@ export const ImageWrapper = styled.div<{ $num: number }>`
 
   .mainImage {
     width: 100%;
+    max-height: 80%;
     display: flex;
     justify-content: center;
     align-items: center;
