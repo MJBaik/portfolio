@@ -256,7 +256,7 @@ export const projectItems: { [name: string]: IProject } = {
     link: [
       [
         "git",
-        "https://github.com/MJBaik/pjt_readme/tree/master/2401_LogInToYou",
+        "https://github.com/MJBaik/pjt_readme/tree/master/2312_collec.T",
         Git,
       ],
     ],
