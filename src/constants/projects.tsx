@@ -18,7 +18,7 @@ export interface IProject {
   period: string;
   desc: string;
   pjt: React.ReactElement;
-  mywork: string;
+  mywork: React.ReactElement;
   skills: string[];
   detail: React.ReactElement;
   thumbnails: string[];
@@ -39,8 +39,13 @@ export const projectItems: { [name: string]: IProject } = {
       </ul>
     ),
     period: "24.04.08 ~ 05.17 (6주)",
-    mywork:
-      "(FE) UI/UX 설계, 메인 페이지, 이벤트 스트림을 통한 실시간 챗봇 구현, 커뮤니티 전체 목록(필터링 및 무한스크롤), 커뮤니티 디테일 및 CRUD <br /> (BE) 커뮤니티 API (게시글 및 덧글 CRUD,  이미지 업로드)",
+    mywork: (
+      <>
+        (FE) UI/UX 설계, 메인 페이지, 이벤트 스트림을 통한 실시간 챗봇 구현,
+        커뮤니티 전체 목록(필터링 및 무한스크롤), 커뮤니티 디테일 및 CRUD <br />{" "}
+        (BE) 커뮤니티 API (게시글 및 덧글 CRUD, 이미지 업로드)
+      </>
+    ),
     skills: [
       "Next.js 14",
       "Typescript",
@@ -96,8 +101,13 @@ export const projectItems: { [name: string]: IProject } = {
       </ul>
     ),
     period: "24.02.26 ~ 04.05 (6주)",
-    mywork:
-      "(FE) UI/UX 디자인, 메인 페이지, 뉴스 전체 리스트(필터림 및 무한스크롤), 뉴스 디테일(STT, TTS, 단어사전), 뉴스 쉐도잉, 마이페이지, 유저 단어장, 회원정보 수정 및 탈퇴, 데이터 유효성 검사, 일본어 관련 후처리",
+    mywork: (
+      <>
+        (FE) UI/UX 디자인, 메인 페이지, 뉴스 전체 리스트(필터림 및 무한스크롤),
+        뉴스 디테일(STT, TTS, 단어사전), 뉴스 쉐도잉, 마이페이지, 유저 단어장,
+        회원정보 수정 및 탈퇴, 데이터 유효성 검사, 일본어 관련 후처리
+      </>
+    ),
     skills: [
       "React",
       "Typescript",
@@ -154,8 +164,13 @@ export const projectItems: { [name: string]: IProject } = {
       </ul>
     ),
     period: "24.01.08 ~ 02.16 (6주)",
-    mywork:
-      "(FE, 팀장) UI/UX 디자인, JWT (토큰 연동 및 리프레쉬 토큰 발급), 다이어리 조회 및 일기 작성, 채팅 (역무한스크롤, 읽음표시, 안읽은 개수 표시), 환경설정, 유저설정, 테마 기능",
+    mywork: (
+      <>
+        (FE, 팀장) UI/UX 디자인, JWT (토큰 연동 및 리프레쉬 토큰 발급), 다이어리
+        조회 및 일기 작성, 채팅 (역무한스크롤, 읽음표시, 안읽은 개수 표시),
+        환경설정, 유저설정, 테마 기능
+      </>
+    ),
     skills: [
       "React",
       "Typescript",
@@ -205,7 +220,12 @@ export const projectItems: { [name: string]: IProject } = {
       </ul>
     ),
     period: "23.11.16 - 11.23 (6주)",
-    mywork: "(팀장, FE, BE) 회원가입 및 로그인 API를 제외한 전체 FE/BE 개발",
+    mywork: (
+      <>
+        (FE, BE, 팀장) 데이터 크롤링, 회원가입 및 로그인 API를 제외한 전체 FE/BE
+        개발
+      </>
+    ),
     skills: [
       "Vue3",
       "Django",
