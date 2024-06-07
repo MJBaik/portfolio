@@ -11,6 +11,7 @@ function ModalDescription({ project }: Props) {
   return (
     <ModalDescWrapper>
       <ModalTitle title={project.title} link={project.link} />
+      <ModalDescSet subtitle="기간" desc={project.period} />
       <ModalDescSet subtitle="개요(인원)" desc={project.desc} />
       <ModalDescSet subtitle="주요 기능" desc={project.pjt} />
       <ModalDescSet
