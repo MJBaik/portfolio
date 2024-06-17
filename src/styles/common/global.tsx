@@ -32,7 +32,7 @@ export const Global = createGlobalStyle`
     span, header, footer, 
     section, article, main, nav {
       box-sizing: border-box;
-      font-family: "GmarketSans";
+      font-family:  "GmarketSans", 'Mplus';
       color: rgb(var(--text));
     }
 `;

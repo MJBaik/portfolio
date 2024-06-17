@@ -186,6 +186,23 @@ export const AboutButton = styled.div`
   cursor: pointer;
   font-style: italic;
 
+  & > button {
+    border: none;
+    background-color: transparent;
+    outline: none;
+    cursor: pointer;
+    color: rgb(var(--text-sub));
+    font-weight: 900;
+
+    &:hover {
+      color: rgba(var(--red), 0.5);
+    }
+
+    &.now {
+      color: rgb(var(--red));
+    }
+  }
+
   &:hover {
     color: rgb(var(--red));
   }

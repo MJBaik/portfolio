@@ -17,6 +17,7 @@ export const HeaderPaddingSection = styled.section`
     & > span {
       font-size: 28pt;
       color: rgba(var(--text-sub), 0.3);
+      font-family: "Mplus", "GmarketSans";
       font-weight: 900;
 
       &.color {

@@ -7,9 +7,11 @@ import {
   HeaderTitle,
 } from "../../styles/Header/style";
 import Video from "../../assets/images/bgMovie.mp4";
+import { useLanguageStore } from "../../stores/languageStore";
 
 function Header() {
   const videoRef = useRef<HTMLVideoElement>(null);
+  const { language, setLanguage } = useLanguageStore();
 
   useEffect(() => {
     if (videoRef.current) {
@@ -17,9 +19,32 @@ function Header() {
     }
   }, []);
 
+  const changeLanguage = (lan: "ko" | "en" | "jp") => {
+    setLanguage(lan);
+  };
+
   return (
     <HeaderSection id="header">
-      <AboutButton></AboutButton>
+      <AboutButton>
+        <button
+          onClick={() => changeLanguage("ko")}
+          className={language === "ko" ? "now" : undefined}
+        >
+          한
+        </button>
+        <button
+          onClick={() => changeLanguage("jp")}
+          className={language === "jp" ? "now" : undefined}
+        >
+          日
+        </button>
+        {/* <button
+          onClick={() => changeLanguage("en")}
+          className={language === "en" ? "now" : undefined}
+        >
+          EN
+        </button> */}
+      </AboutButton>
       <HeaderTitle>
         <div className="titleInner">
           <h1>Frontend Developer</h1>

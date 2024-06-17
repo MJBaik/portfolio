@@ -1,5 +1,6 @@
-import React, { useState } from "react";
+import React, { useMemo, useState } from "react";
 import { ImageWrapper } from "../../styles/Modal/images";
+import { useLanguageStore } from "../../stores/languageStore";
 
 type Props = {
   images: string[];
@@ -8,6 +9,18 @@ type Props = {
 
 function ModalImage({ images, thumbs }: Props) {
   const [now, setNow] = useState(0);
+
+  const { language } = useLanguageStore();
+  const message = useMemo(() => {
+    switch (language) {
+      case "ko":
+        return "※마우스를 올리면 gif가 재생됩니다.";
+      case "jp":
+        return "※マウスポインターを乗せるとgifが再生されます。";
+      case "en":
+        return "※마우스를 올리면 gif가 재생됩니다.";
+    }
+  }, [language]);
 
   const playGIF = (e: React.MouseEvent<HTMLImageElement>) => {
     const target = e.target as HTMLElement;
@@ -22,7 +35,7 @@ function ModalImage({ images, thumbs }: Props) {
   return (
     <ImageWrapper $num={images.length}>
       <div className="imageBox">
-        <p className="notice">※마우스를 올리면 gif가 재생됩니다.</p>
+        <p className="notice">{message}</p>
         <img
           className="mainImage"
           src={thumbs[now]}
